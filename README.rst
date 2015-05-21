@@ -6,5 +6,6 @@ Backup elastic search by taking snapshots.
 
 Example:
 
-.. highlighted:: bash
+.. code-block:: bash
+
     $ python -m elasticsearch_backup --config /etc/elastic_search_backup/config.yml
