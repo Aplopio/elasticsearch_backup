@@ -66,7 +66,7 @@ def poll_snapshot_status(snapshot_uri):
 
 
 def create_snapshot(node, repo):
-    date_stamp = datetime.datetime.now().date().strftime('%Y%m%d')
+    date_stamp = datetime.datetime.now().strftime('%Y%m%d_%s')
     _sys_print('Creating snapshot for {} ...'.format(date_stamp))
 
     snapshot_uri = '{repo}/snapshot_{date}'.format(
